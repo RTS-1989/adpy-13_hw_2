@@ -45,8 +45,11 @@ class Country_iterator:
 
 if __name__ == '__main__':
 
+    print('In progress...')
     result_list = []
     for item in Country_iterator(0, len(Country_iterator.get_countries('countries.json')), 'countries.json'):
         result_list.append(item)
     Country_iterator.write_to_file('country_info.json', result_list)
+    print('Check info in country_info.json')
+
      
